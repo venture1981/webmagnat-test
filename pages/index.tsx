@@ -1,13 +1,43 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { Cost, Post, Star, Whitestar, Work } from "components/SvgList";
+import { Stack } from "components/Stack";
 
 export default function HomePage(props: {
   startLoading: Function;
   closeLoading: Function;
   pageLoading: boolean;
 }) {
-
+  const jobTitles = [
+    "Data Entry Specialist",
+    "Vide Editors",
+    "Data Analyst",
+    "Shopify Developer",
+    "Ruby on Rails Developer",
+    "Andriod Developer",
+    "Bookkeeper",
+    "Content Writer",
+    "Copywriter",
+    "Database Admin",
+    "Data Scientist",
+    "Front-end developer",
+    "Game Developer",
+    "Graphic Designer",
+    "Javascript Developer",
+    "Logo Designer",
+    "Mobile App Developer",
+    "PHP developer",
+    "Python Developer",
+    "Resume Writer",
+    "SEO Expert",
+    "Social Media Manager",
+    "Software Developer",
+    "Software Engineer",
+    "Technical Wroter",
+    "UI Designer",
+    "UX Designer",
+    "Virtual Assistant",
+  ];
   return (
     <>
       <main className="container mx-auto w-full min-h-100vh flex flex-col">
@@ -36,7 +66,7 @@ export default function HomePage(props: {
           <div className="md:w-1/2 w-full justify-center">
             <img className="h-[400px] w-full mx-auto" src="https://media2.giphy.com/media/11xBk5MoWjrYoE/giphy.gif?cid=ecf05e47nkss7ql1551yjybn7oc5i41fk00l1fe1fsl98n8j&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="" />
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="pl-8 flex flex-col gap-5">
             <div className="text-[#001e00] text-[40px]" style={{ "fontFamily": "Mirza" }}>
               Up your work game, it's free
             </div>
@@ -81,160 +111,19 @@ export default function HomePage(props: {
             Looking for work?<span className="text-[#108a55] underline cursor-pointer">Broswe jobs</span>
           </p>
         </div>
-        <div className="flex mt-[40px] flex-row">
-          <div className="w-1/2 flex flex-col gap-10">
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-1/2 flex flex-col gap-10">
-
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-            <div className="flex pl-3 flex-col">
-              <p className="text-[20px] font-medium">
-                Development & IT
-              </p>
-              <div className="flex gap-5">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 flex justify-center items-center">
-                    <Star />
-                  </div>
-                  <p className=" text-[#5e6d55] text-[16px]">
-                    4.85/5
-                  </p>
-                </div>
-                <p className=" text-[#5e6d55] text-[16px]">
-                  1853 skills
-                </p>
-              </div>
-            </div>
-          </div>
-
+        <div className="grid md:grid-cols-4 grid-cols-2 mx-auto gap-5">
+          <Stack skills={"1642"} point={"4.2/5"} title={"Development & IT"} />
+          <Stack skills={"432"} point={"4.53/5"} title={"Design & Creative"} />
+          <Stack skills={"1642"} point={"4.2/5"} title={"Admin & Customer support"} />
+          <Stack skills={"432"} point={"4.53/5"} title={"Finance & Accounting"} />
+          <Stack skills={"753"} point={"4.53/5"} title={"Engineering & Architecture"} />
+          <Stack skills={"743"} point={"4.2/5"} title={"Legal"} />
+          <Stack skills={"753"} point={"4.53/5"} title={"Engineering & Architecture"} />
+          <Stack skills={"743"} point={"4.2/5"} title={"Legal"} />
         </div>
+
         <div className="md:flex md:flex-row flex flex-col mt-7">
-          <div className="md:w-3/5 w-full flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg">
+          <div className="md:w-3/5 w-full flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg pb-7">
             <p className="text-white font-medium text-[20px] leading-4">Enterprise suite</p>
             <p className="text-white font-medium text-[42px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>This is how</p>
             <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "Mirza" }}>good companies</p>
@@ -279,20 +168,28 @@ export default function HomePage(props: {
           <p className="text-white text-[42px] font-bold">your way</p>
           <p className="text-white text-[16px] w-[55%]">Work with the largest network of independent professionals and get things done from quick turnarounds to big transformations.</p>
           <div className="md:flex md:flex-row flex flex-col gap-4 justify-around my-10">
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
-              <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
-              <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
-              <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+            <button className="rounded-lg text-white bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full hover:bg-white hover:text-[#108a00]">
+              <p className="font-medium text-[24px] leading-6">Post a job</p>
+              <p className="font-medium text-[24px] leading-6">and hire a pro</p>
+              <div className="flex md:justify-start justify-end w-full">
+                <p className="font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+              </div>
             </button>
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
-              <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
-              <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
-              <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+            <button className="rounded-lg text-white bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full hover:bg-white hover:text-[#108a00]">
+              <p className="font-medium text-[24px] leading-6">Post a job</p>
+              <p className="font-medium text-[24px] leading-6">and hire a pro</p>
+              <div className="flex md:justify-start justify-end w-full">
+                <p className="font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+              </div>
+
             </button>
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
-              <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
-              <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
-              <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+            <button className="rounded-lg text-white bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full hover:bg-white hover:text-[#108a00]">
+              <p className="font-medium text-[24px] leading-6">Post a job</p>
+              <p className="font-medium text-[24px] leading-6">and hire a pro</p>
+              <div className="flex md:justify-start justify-end w-full">
+                <p className="font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
+              </div>
+
             </button>
           </div>
         </div>
@@ -370,7 +267,7 @@ export default function HomePage(props: {
             <p className="text-white font-medium text-[20px] leading-4">Find talent</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>Find great</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>work</p>
-            <p className="text-white text-[18px] mt-8 border-b-2 border-white">
+            <p className="text-white text-[18px] mt-8 pb-[100px] border-b-2 border-white">
               Meet clients you’re excited to work with and take your career or business to new heights.
             </p>
             <div className="flex justify-between">
@@ -389,7 +286,7 @@ export default function HomePage(props: {
             <button className="my-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Find opportunities</button>
           </div>
         </div>
-        <div className="w-full flex justify-start">
+        <div className="w-full flex justify-start py-5">
           <p className="text-black text-[62px] w-full md:w-3/5 font-semibold">Trusted by leading brands and startups</p>
         </div>
         <div className="flex w-full gap-4 justify-start overflow-x-auto">
@@ -430,8 +327,8 @@ export default function HomePage(props: {
             <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
           </div>
         </div>
-        <div className="w-full flex justify-between px-5 items-center">
-          <div className="flex flex-col w-2/5">
+        <div className="w-full flex md:flex-row flex-col justify-between px-5 items-center bg-[]">
+          <div className="flex flex-col md:w-2/5 w-full">
             <div className="text-black text-[38px] font-medium mt-10">
               We support Ukraine
             </div>
@@ -440,48 +337,25 @@ export default function HomePage(props: {
             </p>
             <button className="my-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Learn more</button>
           </div>
-          <div className="flex items-start justify-center">
+          <div className="flex items-start justify-end md:justify-center w-full ">
             <img src="/img/ukraine-help.svg" className="w-[122px] h-[122px]" alt="" />
           </div>
         </div>
-        <div className="flex justify-around gap-4">
-          <div className="flex flex-col gap-3">
-            <p className="text-[#14a800] text-[32px]">Top skills</p>
-            <p className="text-[#d5e0d5] text-[32px]">Trending skills</p>
-            <p className="text-[#d5e0d5] text-[32px]">Top skills in US</p>
-            <p className="text-[#d5e0d5] text-[32px]">Project catalog</p>
+        <div className="flex md:flex-row flex-col justify-around gap-4">
+          <div className="flex flex-row md:flex-col gap-3">
+            <p className="text-[#14a800] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Top skills</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Trending skills</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Top skills in US</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Project catalog</p>
           </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
-            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+          <div className="flex flex-row justify-between mb-10">
+            <div className="grid gap-3 sm:grid-cols-2">
+              {jobTitles.map((title) => (
+                <p key={title} className="text-[#5e6d55] text-[22px]">
+                  {title}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </main>

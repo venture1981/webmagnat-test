@@ -8,8 +8,21 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
   const [isList1, setIsList1] = useState(true);
   const [isList2, setIsList2] = useState(true);
   const [isList3, setIsList3] = useState(true);
+  const list = [
+    "For Clients",
+    "How to hire",
+    "Talent Marketplace",
+    "Project Catalog",
+    "Talent Scout",
+    "Hire an Agency",
+    "Enterprise",
+    "Payroll Services",
+    "Direct Contracts",
+    "Hire Worldwide",
+    "Hire in the USA"
+  ]
   return (
-    <div className="flex flex-col bg-[#001e00] px-5 rounded-md">
+    <div className="flex flex-col bg-[#001e00] p-5 container mx-auto rounded-md">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
           <div className="md:flex md:flex-col transition-all duration-500 ease-in-out justify-between cursor-pointer flex flex-row my-5 md:border-none"
@@ -18,36 +31,31 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
             }}
           >
             <p className="text-[14px] mx-5 text-white">For Clients</p>
-            <div className="w-6 h-6 flex group-hover:rotate-180 md:hidden">
+            <div className={`w-6 h-6 flex group-hover:rotate-180 md:hidden ${isList ? 'rotate-180' : ''}`}>
               <UpdownArrowwhite />
             </div>
           </div>
           {
             isList &&
             <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              <p className="text-[14px] text-white hover:underline cursor-pointer">For Clients</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">HOw to hire</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Talent Marketplace</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Project Catalog</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Talent Scout</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Hire an Agency</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Enterprise</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Payroll Services</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Direct Contracts</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Hire Worldwide</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Hire in the USA</p>
+              {list.map((index) => {
+                return (
+                  <p className="text-[14px] text-white hover:underline cursor-pointer">{index}</p>
+                )
+              })}
+
             </div>
           }
         </div>
 
-        <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
-          <div className="md:flex md:flex-col transition-all duration-500 ease-in-out justify-between cursor-pointer flex flex-row my-5"
+        <div className="md:flex flex-col flex transition-all duration-500 ease-in-out md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
+          <div className="md:flex md:flex-col justify-between cursor-pointer flex flex-row my-5"
             onClick={() => {
               setIsList1(!isList1);
             }}
           >
             <p className="text-[14px] mx-5 text-white">For Talent</p>
-            <div className="w-6 h-6 flex group-hover:rotate-180 md:hidden">
+            <div className={`w-6 h-6 flex group-hover:rotate-180 md:hidden ${isList1 ? 'rotate-180' : ''}`}>
               <UpdownArrowwhite />
             </div>
           </div>
@@ -61,30 +69,50 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
             </div>
           }
         </div>
-        <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
-          <div className="md:flex md:flex-col transition-all duration-500 ease-in-out justify-between cursor-pointer flex flex-row my-5"
+        <div className="md:flex flex-col flex md:justify-start justify-between border-b-[1px] border-white md:border-none md:pb-5 pb-0 overflow-hidden">
+          <div
+            className="md:flex md:flex-col transition-all duration-500 ease-in-out justify-between cursor-pointer flex flex-row my-5"
             onClick={() => {
               setIsList2(!isList2);
             }}
           >
             <p className="text-[14px] mx-5 text-white">Resources</p>
-            <div className="w-6 h-6 flex group-hover:rotate-180 md:hidden">
+            <div
+              className={`w-6 h-6 flex group-hover:rotate-180 md:hidden ${isList2 ? "rotate-180" : ""
+                }`}
+            >
               <UpdownArrowwhite />
             </div>
           </div>
-          {
-            isList2 &&
+
+          {isList2 && (
             <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Help & Support</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Success Stories</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Upwork Review</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Resources</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Blog</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Community</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Program</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Free Business</p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Help & Support
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Success Stories
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Upwork Review
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Resources
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Blog
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Community
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Program
+              </p>
+              <p className="text-[14px] text-white hover:underline cursor-pointer">
+                Free Business
+              </p>
             </div>
-          }
+          )}
         </div>
 
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
@@ -94,7 +122,7 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
             }}
           >
             <p className="text-[14px] mx-5 text-white">Company</p>
-            <div className="w-6 h-6 flex group-hover:rotate-180 md:hidden">
+            <div className={`w-6 h-6 flex group-hover:rotate-180 md:hidden ${isList3 ? 'rotate-180' : ''}`}>
               <UpdownArrowwhite />
             </div>
           </div>
@@ -137,7 +165,7 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
         </div>
         <div className="flex gap-2 items-center md:flex-row flex-col">
           <p className="text-[14px] text-white font-bold">Mobile App</p>
-          <div className="flex ">
+          <div className="flex gap-3">
             <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full p-3 border-white border-[1px] cursor-pointer">
               <Apple />
             </div>

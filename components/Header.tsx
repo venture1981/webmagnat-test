@@ -24,7 +24,7 @@ const Header = ({ }: IHeaderProps): JSX.Element => {
           <button className="w-[82px] h-[22px] flex" >
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Upwork_Logo.svg" alt="" />
           </button>
-          <div className="hidden lg:flex items-center group">
+          <div className="hidden lg:flex items-center group cursor-pointer">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">Find Talent</button>
             <div className="w-3 h-3 group-hover:rotate-180">
               <UpdownArrow />
@@ -78,25 +78,25 @@ const Header = ({ }: IHeaderProps): JSX.Element => {
       {
         isMenu &&
         <div className="w-full px-6 lg:hidden flex flex-col justify-between items-center">
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between items-center cursor-pointer">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">Find Talent</button>
             <div className="w-3 h-3 group-hover:rotate-180">
               <UpdownArrow />
             </div>
           </div>
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between items-center cursor-pointer">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">Enterprize</button>
             <div className="w-3 h-3 group-hover:rotate-180">
               <UpdownArrow />
             </div>
           </div>
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between items-center cursor-pointer">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">Why Upwork</button>
             <div className="w-3 h-3 group-hover:rotate-180">
               <UpdownArrow />
             </div>
           </div>
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between items-center cursor-pointer">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">Enterprize</button>
             <div className="w-3 h-3 group-hover:rotate-180">
               <UpdownArrow />
