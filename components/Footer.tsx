@@ -131,20 +131,21 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
               <UpdownArrowwhite />
             </div>
           </div>
-          {
-            isList3 &&
-            <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              <p className="text-[14px] text-white hover:underline cursor-pointer">About Us</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Leadership</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Investor Relations</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Careers</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Our Impact</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Press</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Contract Us</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Trust,Safety & Security</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Modern Slavery Statement</p>
-            </div>
-          }
+          <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100 overflow-hidden"
+            style={{
+              height: isList3 ? "400px" : "0"
+            }}
+          >
+            <p className="text-[14px] text-white hover:underline cursor-pointer">About Us</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Leadership</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Investor Relations</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Careers</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Our Impact</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Press</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Contract Us</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Trust,Safety & Security</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Modern Slavery Statement</p>
+          </div>
         </div>
       </div>
       <div className="flex md:flex-row flex-col justify-between items-start gap-5 py-5">

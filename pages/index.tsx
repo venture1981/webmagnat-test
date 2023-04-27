@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Cost, Post, Star, Whitestar, Work } from "components/SvgList";
 import { Stack } from "components/Stack";
+import TrustSlider from "components/TrustSlider";
 
 export default function HomePage(props: {
   startLoading: Function;
@@ -59,7 +60,7 @@ export default function HomePage(props: {
             </div>
           </div>
           <div className="md:flex hidden">
-            <img src="/img/globe.jpg" className="w-[370px]" alt="" />
+            <img src="/img/globe.jpg" className="w-[440px] h-[440px] object-contain" alt="" />
           </div>
         </div>
         <div className="md:flex md:flex-row flex-col justify-center">
@@ -289,44 +290,7 @@ export default function HomePage(props: {
         <div className="w-full flex justify-start py-5">
           <p className="text-black text-[62px] w-full md:w-3/5 font-semibold">Trusted by leading brands and startups</p>
         </div>
-        <div className="flex w-full gap-4 justify-start overflow-x-auto">
-          <div className="flex w-1/2 flex-col gap-3 bg-[#13544e] rounded-md p-3">
-            <div className="flex">
-              <img src="/img/nasdaq-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
-            </div>
-            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
-            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
-            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
-            <p className="text-white text-[26px]">Emmy Winning</p>
-            <p className="text-white text-[16px]">Facebook watch program</p>
-            <p className="text-white text-[26px]">Millions</p>
-            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
-          </div>
-          <div className="flex w-1/2 flex-col gap-3 bg-[#bc511b] rounded-md p-3">
-            <div className="flex">
-              <img src="/img/microsoft-lg-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
-            </div>
-            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
-            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
-            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
-            <p className="text-white text-[26px]">Emmy Winning</p>
-            <p className="text-white text-[16px]">Facebook watch program</p>
-            <p className="text-white text-[26px]">Millions</p>
-            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
-          </div>
-          <div className="flex w-1/2 flex-col gap-3 bg-[black] rounded-md p-3">
-            <div className="flex">
-              <img src="/img/microsoft-lg-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
-            </div>
-            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
-            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
-            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
-            <p className="text-white text-[26px]">Emmy Winning</p>
-            <p className="text-white text-[16px]">Facebook watch program</p>
-            <p className="text-white text-[26px]">Millions</p>
-            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
-          </div>
-        </div>
+        {/* <TrustSlider /> */}
         <div className="w-full flex md:flex-row flex-col justify-between px-5 items-center bg-[]">
           <div className="flex flex-col md:w-2/5 w-full">
             <div className="text-black text-[38px] font-medium mt-10">
