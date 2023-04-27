@@ -40,17 +40,19 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
               <UpdownArrowwhite />
             </div>
           </div>
-          {
-            isList &&
-            <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              {list.map((index) => {
-                return (
-                  <p className="text-[14px] text-white hover:underline cursor-pointer">{index}</p>
-                )
-              })}
+          <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100 overflow-hidden"
+            style={{
+              height: isList ? "250px" : "0"
+            }}
+          >
+            {list.map((index) => {
+              return (
+                <p className="text-[14px] text-white hover:underline cursor-pointer">{index}</p>
+              )
+            })}
 
-            </div>
-          }
+          </div>
+
         </div>
 
         <div className="md:flex flex-col flex transition-all duration-500 ease-in-out md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
@@ -64,15 +66,17 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
               <UpdownArrowwhite />
             </div>
           </div>
-          {
-            isList1 &&
-            <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              <p className="text-[14px] text-white hover:underline cursor-pointer">How to find work</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Direct Contracts</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Find Freelance</p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">Find Freelance jobs</p>
-            </div>
-          }
+          <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100 overflow-hidden"
+            style={{
+              height: isList1 ? "100px" : "0"
+            }}
+          >
+            <p className="text-[14px] text-white hover:underline cursor-pointer">How to find work</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Direct Contracts</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Find Freelance</p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">Find Freelance jobs</p>
+          </div>
+
         </div>
         <div className="md:flex flex-col flex md:justify-start justify-between border-b-[1px] border-white md:border-none md:pb-5 pb-0 overflow-hidden">
           <div
@@ -90,34 +94,37 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
             </div>
           </div>
 
-          {isList2 && (
-            <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100">
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Help & Support
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Success Stories
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Upwork Review
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Resources
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Blog
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Community
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Program
-              </p>
-              <p className="text-[14px] text-white hover:underline cursor-pointer">
-                Free Business
-              </p>
-            </div>
-          )}
+          <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100 overflow-hidden"
+            style={{
+              height: isList2 ? "200px" : "0"
+            }}
+          >
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Help & Support
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Success Stories
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Upwork Review
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Resources
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Blog
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Community
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Program
+            </p>
+            <p className="text-[14px] text-white hover:underline cursor-pointer">
+              Free Business
+            </p>
+          </div>
+
         </div>
 
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
@@ -133,7 +140,7 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
           </div>
           <div className="md:flex md:flex-col mx-5 transition-all duration-500 ease-in-out opacity-100 overflow-hidden"
             style={{
-              height: isList3 ? "400px" : "0"
+              height: isList3 ? "220px" : "0"
             }}
           >
             <p className="text-[14px] text-white hover:underline cursor-pointer">About Us</p>

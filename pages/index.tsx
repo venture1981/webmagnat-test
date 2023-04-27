@@ -44,7 +44,7 @@ export default function HomePage(props: {
       <main className="container mx-auto w-full min-h-100vh flex flex-col">
         <div className="flex justify-between">
           <div className="flex flex-col justify-start">
-            <p className=" text-[#14a800] leading-[42px] text-[70px]" style={{ fontFamily: "Mirza" }}>How work<br />should work</p>
+            <p className=" text-[#14a800] leading-[70px] text-[70px]" style={{ fontFamily: "PT Serif" }}>How work<br />should work</p>
             <p className=" text-[#5e6d55] text-[20px] mt-5 leading-7">
               Forget the old rules. You can have the best people.<br />
               Right now. Right here
@@ -65,10 +65,10 @@ export default function HomePage(props: {
         </div>
         <div className="md:flex md:flex-row flex-col justify-center">
           <div className="md:w-1/2 w-full justify-center">
-            <img className="h-[400px] w-full mx-auto" src="https://media2.giphy.com/media/11xBk5MoWjrYoE/giphy.gif?cid=ecf05e47nkss7ql1551yjybn7oc5i41fk00l1fe1fsl98n8j&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="" />
+            <img className="h-[400px] object-cover w-full mx-auto" src="https://media2.giphy.com/media/11xBk5MoWjrYoE/giphy.gif?cid=ecf05e47nkss7ql1551yjybn7oc5i41fk00l1fe1fsl98n8j&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="" />
           </div>
           <div className="pl-8 flex flex-col gap-5">
-            <div className="text-[#001e00] text-[40px]" style={{ "fontFamily": "Mirza" }}>
+            <div className="text-[#001e00] text-[40px] font-medium" style={{ "fontFamily": "PT Serif" }}>
               Up your work game, it's free
             </div>
             <div className="flex gap-5">
@@ -104,15 +104,15 @@ export default function HomePage(props: {
             </div>
           </div>
         </div>
-        <div className="flex justify-start flex-col">
-          <div className="text-[#001e00] text-[40px]" style={{ "fontFamily": "Mirza" }}>
+        <div className="flex justify-start flex-col mt-10">
+          <div className="text-[#001e00] text-[40px]" style={{ "fontFamily": "PT Serif" }}>
             Browse talent by category
           </div>
           <p className=" text-[#5e6d55] text-[16px] mt-[10px] leading-7">
             Looking for work?<span className="text-[#108a55] underline cursor-pointer">Broswe jobs</span>
           </p>
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-2 mx-auto gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto gap-5 w-full">
           <Stack skills={"1642"} point={"4.2/5"} title={"Development & IT"} />
           <Stack skills={"432"} point={"4.53/5"} title={"Design & Creative"} />
           <Stack skills={"1642"} point={"4.2/5"} title={"Admin & Customer support"} />
@@ -126,9 +126,9 @@ export default function HomePage(props: {
         <div className="md:flex md:flex-row flex flex-col mt-7">
           <div className="md:w-3/5 w-full flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg pb-7">
             <p className="text-white font-medium text-[20px] leading-4">Enterprise suite</p>
-            <p className="text-white font-medium text-[42px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>This is how</p>
-            <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "Mirza" }}>good companies</p>
-            <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "Mirza" }}>find good company.</p>
+            <p className="text-white font-medium text-[42px] leading-8 mt-5" style={{ fontFamily: "PT Serif" }}>This is how</p>
+            <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "PT Serif" }}>good companies</p>
+            <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "PT Serif" }}>find good company.</p>
             <p className="text-white text-[18px] mt-3">
               Access the top 1% of talent on Upwork, and a full suite of hybrid workforce management tools. This is how innovation works now.
             </p>
@@ -159,15 +159,15 @@ export default function HomePage(props: {
             <button className="mt-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Learn more</button>
           </div>
           <div className="md:w-2/5 w-full order-first md:order-none">
-            <img src="/img/hxwn.jpg" className="rounded-r-lg w-full h-full" alt="" />
+            <img src="/img/hxwn.jpg" className=" object-cover rounded-r-lg w-full h-full" alt="" />
           </div>
         </div>
         <div className="flex mt-7 w-full relative flex-col px-6">
-          <img className="absolute top-0 left-0 -z-[1] bg-cover rounded-lg w-full h-full" src="/img/tal.jpg" alt="" />
+          <img className="absolute top-0 left-0 -z-[1] bg-cover rounded-lg w-full h-full object-cover" src="/img/tal.jpg" alt="" />
           <p className="text-white text-[20px] absolute top-10 left-6">For Client</p>
-          <p className="text-white text-[42px] font-bold mt-[180px] leading-8">Find talents</p>
-          <p className="text-white text-[42px] font-bold">your way</p>
-          <p className="text-white text-[16px] w-[55%]">Work with the largest network of independent professionals and get things done from quick turnarounds to big transformations.</p>
+          <p className="text-white text-[42px] font-bold mt-[180px] leading-8" style={{ fontFamily: "PT Serif" }}>Find talents</p>
+          <p className="text-white text-[42px] font-bold" style={{ fontFamily: "PT Serif" }}>your way</p>
+          <p className="text-white text-[16px] mt-10 w-[55%]">Work with the largest network of independent professionals and get things done from quick turnarounds to big transformations.</p>
           <div className="md:flex md:flex-row flex flex-col gap-4 justify-around my-10">
             <button className="rounded-lg text-white bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full hover:bg-white hover:text-[#108a00]">
               <p className="font-medium text-[24px] leading-6">Post a job</p>
@@ -194,10 +194,10 @@ export default function HomePage(props: {
             </button>
           </div>
         </div>
-        <div className="flex justify-between py-10">
-          <div className="flex flex-col gap-3 w-3/5 bg-[#f2f7f2] py-10 px-5">
-            <p className="text-[42px] text-black font-normal leading-[42px]" style={{ fontFamily: "Inter" }}>Why businesses</p>
-            <p className="text-[42px] text-black leading-[42px]">turn to Upwork</p>
+        <div className="flex md:flex-row flex-col justify-between py-10">
+          <div className="flex flex-col gap-3 w-full md:w-3/5 bg-[#f2f7f2] py-10 px-5">
+            <p className="text-[42px] text-black font-normal leading-[42px]" style={{ fontFamily: "PT Serif" }}>Why businesses</p>
+            <p className="text-[42px] text-black leading-[42px]" style={{ fontFamily: "PT Serif" }}>turn to Upwork</p>
             <div className="flex mt-3">
               <div className="flex">
                 <div className="w-5 h-5">
@@ -232,9 +232,9 @@ export default function HomePage(props: {
               </div>
             </div>
           </div>
-          <div className="flex flex-row px-3 w-2/5 mx-3 rounded-md  bg-[#108a00] relative">
-            <img className="w-[200px] h-[460px] -top-10 -left-[130px] absolute" src="/img/person.png" alt="" />
-            <div className="flex flex-col pt-[160px] text-white">
+          <div className="flex flex-row px-3 md:w-2/5 w-full mx-3 rounded-md  bg-[#108a00] relative">
+            <img className="w-[360px] h-[700px] lg:scale-[0.78]  -rotate-[8deg] lg:-top-[100px] lg:-left-[250px] scale-[0.6] -top-[210px] left-[210px] md:-left-[190px] md:-top-[110px] object-cover z-[1] absolute" src="/img/person.png" alt="" />
+            <div className="flex flex-col md:pt-[160px] py-[44px] text-white">
               <p className="text-3xl font-bold">We're the world's work marketplace</p>
               <div className="flex items-center mt-5">
                 <div className="w-5 h-5" >
@@ -262,15 +262,16 @@ export default function HomePage(props: {
         </div>
         <div className="md:flex md:flex-row flex flex-col mt-7">
           <div className="md:w-1/2 w-full">
-            <img src="/img/woman.jpg" className="rounded-l-lg w-full h-full" alt="" />
+            <img src="/img/woman.jpg" className=" object-cover rounded-l-lg w-full h-full" alt="" />
           </div>
           <div className="md:w-1/2 w-full flex flex-col bg-[#1f57c3] px-4 pt-10 rounded-r-lg">
-            <p className="text-white font-medium text-[20px] leading-4">Find talent</p>
-            <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>Find great</p>
-            <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>work</p>
-            <p className="text-white text-[18px] mt-8 pb-[100px] border-b-2 border-white">
-              Meet clients you’re excited to work with and take your career or business to new heights.
-            </p>
+            <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "PT Serif" }}>Find great</p>
+            <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "PT Serif" }}>work</p>
+            <div className="text-white text-[18px] mt-8 pb-[150px] border-b-2 border-white ">
+              <div className="w-3/5">
+                Meet clients you’re excited to work with and take your career or business to new heights.
+              </div>
+            </div>
             <div className="flex justify-between">
               <p className="text-white text-[18px] mt-8 pr-5">
                 Find opportunities for every stage of your freelance career
@@ -278,17 +279,15 @@ export default function HomePage(props: {
               <p className="text-white text-[18px] mt-8 pr-5">
                 Find opportunities for every stage of your freelance career
               </p>
-            </div>
-            <div className="flex w-full">
               <p className="text-white text-[18px] ml-5 mt-8 w-1/3">
                 Explore different ways to learn
               </p>
             </div>
-            <button className="my-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Find opportunities</button>
+            <button className="my-7 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Find opportunities</button>
           </div>
         </div>
-        <div className="w-full flex justify-start py-5">
-          <p className="text-black text-[62px] w-full md:w-3/5 font-semibold">Trusted by leading brands and startups</p>
+        <div className="w-full flex justify-start py-10">
+          <p className="text-black text-[62px] leading-[62px] w-full md:w-3/5 font-semibold" style={{ fontFamily: "PT Serif" }}>Trusted by leading brands and startups</p>
         </div>
         {/* <TrustSlider /> */}
         <div className="w-full flex md:flex-row flex-col justify-between px-5 items-center bg-[]">
