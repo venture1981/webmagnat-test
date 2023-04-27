@@ -27,7 +27,12 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
           <div className="md:flex md:flex-col transition-all duration-500 ease-in-out justify-between cursor-pointer flex flex-row my-5 md:border-none"
             onClick={() => {
-              setIsList(!isList);
+              if (window.innerWidth < 1024) {
+                setIsList(!isList);
+
+              } else {
+
+              }
             }}
           >
             <p className="text-[14px] mx-5 text-white">For Clients</p>

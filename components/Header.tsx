@@ -1,12 +1,17 @@
 import { WalletModalButton } from "@solana/wallet-adapter-react-ui";
 import { Search, UpdownArrow } from "./SvgList";
 import { useState } from "react";
+import Head from 'next/head';
 interface IHeaderProps { }
 
 const Header = ({ }: IHeaderProps): JSX.Element => {
   const [isMenu, setisMenu] = useState(false);
   return (
     <div className="flex flex-col">
+      <Head>
+        <title>Upwork | The world's work Marketplace</title>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <div className="w-full flex flex-row justify-between items-center h-[64px] p-[24px] border-b border-[#969696]">
         <div className="flex gap-4 items-center">
           <button className="lg:hidden flex">

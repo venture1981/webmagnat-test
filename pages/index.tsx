@@ -52,7 +52,7 @@ export default function HomePage(props: {
             <p className=" text-[#9aaa97] text-[16px] mt-[60px] leading-7">
               Trusted by
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 mb-4">
               <img className="w-[106px] h-10" src="/img/microsoft.svg" alt="" />
               <img className="w-[82px] h-10" src="/img/airbnb.svg" alt="" />
               <img className="w-[55px] h-10" src="/img/bissell.svg" alt="" />
