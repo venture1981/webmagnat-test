@@ -1,7 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { useWallet } from "@solana/wallet-adapter-react";
-import { errorAlert } from "../components/ToastGroup";
 import { Cost, Post, Star, Whitestar, Work } from "components/SvgList";
 
 export default function HomePage(props: {
@@ -9,7 +7,6 @@ export default function HomePage(props: {
   closeLoading: Function;
   pageLoading: boolean;
 }) {
-
 
   return (
     <>
@@ -272,7 +269,7 @@ export default function HomePage(props: {
             <button className="mt-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Learn more</button>
           </div>
           <div className="w-2/5">
-            <img src="/img/hxwn.jpg" className="rounded-r-lg" alt="" />
+            <img src="/img/hxwn.jpg" className="rounded-r-lg w-full h-full" alt="" />
           </div>
         </div>
         <div className="flex mt-7 w-full relative flex-col px-6">
@@ -337,7 +334,7 @@ export default function HomePage(props: {
               </div>
             </div>
           </div>
-          <div className="flex flex-col bg-[#108a00] pt-[100px] pb-[50px] px-8 relative">
+          <div className="flex flex-col bg-[#108a00] pt-[100px] pb-[50px] px-8 relative rounded-md">
             <img className="absolute w-full h-full -left-[90%] top-0" src="/img/person.png" alt="" />
             <p className="text-[33px] text-white">We're</p>
             <p className="text-[33px] text-white">the world's</p>
@@ -372,19 +369,125 @@ export default function HomePage(props: {
         </div>
         <div className="flex mt-7">
           <div className="w-1/2">
-            <img src="/img/woman.jpg" className="rounded-r-lg" alt="" />
+            <img src="/img/woman.jpg" className="rounded-l-lg w-full h-full" alt="" />
           </div>
-          <div className="w-1/2 flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg">
+          <div className="w-1/2 flex flex-col bg-[#1f57c3] px-4 pt-10 rounded-r-lg">
             <p className="text-white font-medium text-[20px] leading-4">Find talent</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>Find great</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>work</p>
-            <p className="text-white text-[18px] mt-8">
+            <p className="text-white text-[18px] mt-8 border-b-2 border-white">
               Meet clients you’re excited to work with and take your career or business to new heights.
             </p>
-
-            <button className="mt-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Find opportunities</button>
+            <div className="flex justify-between">
+              <p className="text-white text-[18px] mt-8 pr-5">
+                Find opportunities for every stage of your freelance career
+              </p>
+              <p className="text-white text-[18px] mt-8 pr-5">
+                Find opportunities for every stage of your freelance career
+              </p>
+            </div>
+            <div className="flex w-full">
+              <p className="text-white text-[18px] ml-5 mt-8 w-1/3">
+                Explore different ways to learn
+              </p>
+            </div>
+            <button className="my-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Find opportunities</button>
           </div>
-
+        </div>
+        <div className="w-full flex justify-start">
+          <p className="text-black text-[62px] w-3/5 font-semibold">Trusted by leading brands and startups</p>
+        </div>
+        <div className="flex w-full gap-4 justify-start overflow-x-auto">
+          <div className="flex w-1/2 flex-col gap-3 bg-[#13544e] rounded-md p-3">
+            <div className="flex">
+              <img src="/img/nasdaq-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
+            </div>
+            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
+            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
+            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
+            <p className="text-white text-[26px]">Emmy Winning</p>
+            <p className="text-white text-[16px]">Facebook watch program</p>
+            <p className="text-white text-[26px]">Millions</p>
+            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
+          </div>
+          <div className="flex w-1/2 flex-col gap-3 bg-[#bc511b] rounded-md p-3">
+            <div className="flex">
+              <img src="/img/microsoft-lg-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
+            </div>
+            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
+            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
+            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
+            <p className="text-white text-[26px]">Emmy Winning</p>
+            <p className="text-white text-[16px]">Facebook watch program</p>
+            <p className="text-white text-[26px]">Millions</p>
+            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
+          </div>
+          <div className="flex w-1/2 flex-col gap-3 bg-[black] rounded-md p-3">
+            <div className="flex">
+              <img src="/img/microsoft-lg-light.svg" className="w-[200px] h-[30px] ml-4" alt="" />
+            </div>
+            <p className="text-white text-[20px]">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</p>
+            <p className="text-white text-[16px]">Josh Machiz, Chief Digital Officer</p>
+            <p className="text-white text-[16px] w-full border-b-2 border-white pb-3">Results</p>
+            <p className="text-white text-[26px]">Emmy Winning</p>
+            <p className="text-white text-[16px]">Facebook watch program</p>
+            <p className="text-white text-[26px]">Millions</p>
+            <p className="text-white text-[16px]">of impressions generated per client per IPO</p>
+          </div>
+        </div>
+        <div className="w-full flex justify-between px-5 items-center">
+          <div className="flex flex-col w-2/5">
+            <div className="text-black text-[38px] font-medium mt-10">
+              We support Ukraine
+            </div>
+            <p className="text-[#5e6d55] text-lg">
+              We are taking action to help our freelancers, our clients, and the people of Ukraine—and so can you
+            </p>
+            <button className="my-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Learn more</button>
+          </div>
+          <div className="flex items-start justify-center">
+            <img src="/img/ukraine-help.svg" className="w-[122px] h-[122px]" alt="" />
+          </div>
+        </div>
+        <div className="flex justify-around gap-4">
+          <div className="flex flex-col gap-3">
+            <p className="text-[#14a800] text-[32px]">Top skills</p>
+            <p className="text-[#d5e0d5] text-[32px]">Trending skills</p>
+            <p className="text-[#d5e0d5] text-[32px]">Top skills in US</p>
+            <p className="text-[#d5e0d5] text-[32px]">Project catalog</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+            <p className="text-[#5e6d55] text-[22px]">Data Entry Specialist</p>
+          </div>
         </div>
       </main>
     </>

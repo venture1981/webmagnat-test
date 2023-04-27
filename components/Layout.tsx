@@ -1,5 +1,5 @@
 import Header from "./Header";
-
+import Footer from "./Footer";
 interface ILayoutProps {
   children: any;
 }
@@ -9,6 +9,7 @@ export default function Layout({ children }: ILayoutProps): JSX.Element {
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }
