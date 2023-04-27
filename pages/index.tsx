@@ -28,13 +28,13 @@ export default function HomePage(props: {
               <img className="w-[55px] h-10" src="/img/bissell.svg" alt="" />
             </div>
           </div>
-          <div>
+          <div className="md:flex hidden">
             <img src="/img/globe.jpg" className="w-[370px]" alt="" />
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="w-1/2 justify-center">
-            <img className="h-[400px] mx-auto" src="https://media2.giphy.com/media/11xBk5MoWjrYoE/giphy.gif?cid=ecf05e47nkss7ql1551yjybn7oc5i41fk00l1fe1fsl98n8j&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="" />
+        <div className="md:flex md:flex-row flex-col justify-center">
+          <div className="md:w-1/2 w-full justify-center">
+            <img className="h-[400px] w-full mx-auto" src="https://media2.giphy.com/media/11xBk5MoWjrYoE/giphy.gif?cid=ecf05e47nkss7ql1551yjybn7oc5i41fk00l1fe1fsl98n8j&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="text-[#001e00] text-[40px]" style={{ "fontFamily": "Mirza" }}>
@@ -233,8 +233,8 @@ export default function HomePage(props: {
           </div>
 
         </div>
-        <div className="flex mt-7">
-          <div className="w-3/5 flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg">
+        <div className="md:flex md:flex-row flex flex-col mt-7">
+          <div className="md:w-3/5 w-full flex flex-col bg-[#13544e] px-4 pt-10 rounded-l-lg">
             <p className="text-white font-medium text-[20px] leading-4">Enterprise suite</p>
             <p className="text-white font-medium text-[42px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>This is how</p>
             <p className="text-[#91e6b3] font-medium text-[42px] leading-10" style={{ fontFamily: "Mirza" }}>good companies</p>
@@ -268,28 +268,28 @@ export default function HomePage(props: {
             </div>
             <button className="mt-5 text-[16px] w-[175px] font-medium bg-white px-5 py-[6px] rounded-[20px] border-[#108a00] border-[1px] text-[#13544e] cursor-pointer">Learn more</button>
           </div>
-          <div className="w-2/5">
+          <div className="md:w-2/5 w-full order-first md:order-none">
             <img src="/img/hxwn.jpg" className="rounded-r-lg w-full h-full" alt="" />
           </div>
         </div>
         <div className="flex mt-7 w-full relative flex-col px-6">
-          <img className="absolute top-0 left-0 -z-[1] rounded-lg w-full h-full" src="/img/tal.jpg" alt="" />
+          <img className="absolute top-0 left-0 -z-[1] bg-cover rounded-lg w-full h-full" src="/img/tal.jpg" alt="" />
           <p className="text-white text-[20px] absolute top-10 left-6">For Client</p>
           <p className="text-white text-[42px] font-bold mt-[180px] leading-8">Find talents</p>
           <p className="text-white text-[42px] font-bold">your way</p>
           <p className="text-white text-[16px] w-[55%]">Work with the largest network of independent professionals and get things done from quick turnarounds to big transformations.</p>
-          <div className="flex justify-around my-10">
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col w-[30%]">
+          <div className="md:flex md:flex-row flex flex-col gap-4 justify-around my-10">
+            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
               <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
               <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
               <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
             </button>
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col w-[30%]">
+            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
               <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
               <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
               <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
             </button>
-            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col w-[30%]">
+            <button className="rounded-lg bg-[#108a00] p-4 flex flex-col md:w-[30%] w-full">
               <p className="text-white font-medium text-[24px] leading-6">Post a job</p>
               <p className="text-white font-medium text-[24px] leading-6">and hire a pro</p>
               <p className="text-white font-medium text-[14px] mt-5">Talent Marketplace <sup>TM</sup></p>
@@ -297,7 +297,7 @@ export default function HomePage(props: {
           </div>
         </div>
         <div className="flex justify-between py-10">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 w-3/5 bg-[#f2f7f2] py-10 px-5">
             <p className="text-[42px] text-black font-normal leading-[42px]" style={{ fontFamily: "Inter" }}>Why businesses</p>
             <p className="text-[42px] text-black leading-[42px]">turn to Upwork</p>
             <div className="flex mt-3">
@@ -334,44 +334,39 @@ export default function HomePage(props: {
               </div>
             </div>
           </div>
-          <div className="flex flex-col bg-[#108a00] pt-[100px] pb-[50px] px-8 relative rounded-md">
-            <img className="absolute w-full h-full -left-[90%] top-0" src="/img/person.png" alt="" />
-            <p className="text-[33px] text-white">We're</p>
-            <p className="text-[33px] text-white">the world's</p>
-            <p className="text-[33px] text-white">work</p>
-            <p className="text-[33px] text-white">marketplace</p>
-            <div className="flex">
-              <div className="w-5 h-5 mt-3">
-                <Whitestar />
-              </div>
+          <div className="flex flex-row px-3 w-2/5 mx-3 rounded-md  bg-[#108a00] relative">
+            <img className="w-[200px] h-[460px] -top-10 -left-[130px] absolute" src="/img/person.png" alt="" />
+            <div className="flex flex-col pt-[160px] text-white">
+              <p className="text-3xl font-bold">We're the world's work marketplace</p>
+              <div className="flex items-center mt-5">
+                <div className="w-5 h-5" >
 
-              <div className="flex flex-col">
-                <p className="text-[33px] text-white">4.9/5</p>
-                <p className="text-[16px] text-white">Clients rate</p>
-                <p className="text-[16px] text-white">professionals on</p>
-                <p className="text-[16px] text-white">Upwork</p>
+                  <Whitestar />
+                </div>
+                <div className="ml-2">
+                  <p className="text-3xl font-bold">4.9/5</p>
+                  <p className="text-sm">Clients rate professionals on Upwork</p>
+                </div>
               </div>
+              <div className="flex items-center mt-5">
+                <div className="w-5 h-5" >
 
-            </div>
-            <div className="flex">
-              <div className="w-5 h-5 mt-3">
-                <Whitestar />
+                  <Whitestar />
+                </div>
+                <div className="ml-2">
+                  <p className="text-3xl font-bold">Award winner</p>
+                  <p className="text-sm">G2's 2021 best Software Awards</p>
+                </div>
               </div>
-
-              <div className="flex flex-col">
-                <p className="text-[33px] text-white">Award winner</p>
-                <p className="text-[16px] text-white">G2's 2021 best</p>
-                <p className="text-[16px] text-white">Software Awards</p>
-              </div>
-
             </div>
           </div>
+
         </div>
-        <div className="flex mt-7">
-          <div className="w-1/2">
+        <div className="md:flex md:flex-row flex flex-col mt-7">
+          <div className="md:w-1/2 w-full">
             <img src="/img/woman.jpg" className="rounded-l-lg w-full h-full" alt="" />
           </div>
-          <div className="w-1/2 flex flex-col bg-[#1f57c3] px-4 pt-10 rounded-r-lg">
+          <div className="md:w-1/2 w-full flex flex-col bg-[#1f57c3] px-4 pt-10 rounded-r-lg">
             <p className="text-white font-medium text-[20px] leading-4">Find talent</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>Find great</p>
             <p className="text-white font-medium text-[62px] leading-8 mt-5" style={{ fontFamily: "Mirza" }}>work</p>
@@ -395,7 +390,7 @@ export default function HomePage(props: {
           </div>
         </div>
         <div className="w-full flex justify-start">
-          <p className="text-black text-[62px] w-3/5 font-semibold">Trusted by leading brands and startups</p>
+          <p className="text-black text-[62px] w-full md:w-3/5 font-semibold">Trusted by leading brands and startups</p>
         </div>
         <div className="flex w-full gap-4 justify-start overflow-x-auto">
           <div className="flex w-1/2 flex-col gap-3 bg-[#13544e] rounded-md p-3">
