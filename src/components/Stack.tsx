@@ -8,7 +8,7 @@ export const Stack = (props: { title, point, skills }) => {
             </p>
             <div className="flex gap-5">
                 <div className="flex items-center">
-                    <div className="w-3 h-3 flex justify-center items-center">
+                    <div className="flex items-center justify-center w-3 h-3">
                         <Star />
                     </div>
                     <p className=" text-[#5e6d55] text-[16px]">
