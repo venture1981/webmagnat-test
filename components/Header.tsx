@@ -7,7 +7,7 @@ interface IHeaderProps { }
 const Header = ({ }: IHeaderProps): JSX.Element => {
   const [isMenu, setisMenu] = useState(false);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col fixed top-0 w-full bg-white z-10">
       <Head>
         <title>Upwork | The world's work Marketplace</title>
         <link rel="shortcut icon" href="/favicon.ico" />

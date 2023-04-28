@@ -39,9 +39,15 @@ export default function HomePage(props: {
     "UX Designer",
     "Virtual Assistant",
   ];
+  const skills = [
+    "Top skills",
+    "Trending skills",
+    "Top skills in US",
+    "Project catalog",
+  ]
   return (
     <>
-      <main className="container md:mx-auto mx-3 w-full min-h-100vh flex flex-col">
+      <main className="container se:mx-auto mx-3 w-full min-h-100vh flex flex-col mt-[120px]">
         <div className="flex justify-between">
           <div className="flex flex-col justify-start">
             <p className=" text-[#14a800] leading-[70px] text-[70px]" style={{ fontFamily: "PT Serif" }}>How work<br />should work</p>
@@ -309,7 +315,11 @@ export default function HomePage(props: {
             <p className="text-[#14a800] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Top skills</p>
             <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Trending skills</p>
             <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Top skills in US</p>
-            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Project catalog</p>
+            {skills.map((index, key) => {
+              return (
+                <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold" key={key}>{index}</p>
+              )
+            })}
           </div>
           <div className="flex flex-row justify-between mb-10">
             <div className="grid gap-3 sm:grid-cols-2">

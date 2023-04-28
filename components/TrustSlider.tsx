@@ -18,7 +18,7 @@ export default function TrustSlider() {
                         }}
                     ><ArrowRight /></button>
             }
-            <div className={`absolute w-[calc(50%-64px)] flex flex-col gap-3 bg-[#13544e] rounded-md px-7 transition-all duration-500 ease-in-out pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] -translate-x-[200px]' : ''}`}>
+            <div className={`absolute w-[320px] sm:w-[calc(50%-64px)] flex flex-col gap-3 bg-[#13544e] rounded-md px-7 transition-all duration-500 ease-in-out pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] sm:-translate-x-[200px] -translate-x-[600px]' : ''}`}>
                 <div className="flex">
                     <img src="/img/nasdaq-light.svg" className="w-[200px] h-[60px]" alt="" />
                 </div>
@@ -36,7 +36,7 @@ export default function TrustSlider() {
                     </div>
                 </div>
             </div>
-            <div className={`absolute left-[calc(50%-32px)] transition-all duration-500 ease-in-out w-[calc(50%-64px)] flex flex-col gap-3 bg-[#bc511b] rounded-md px-7 pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] -translate-x-[200px]' : ''}`}>
+            <div className={`absolute w-[320px] sm:w-[calc(50%-64px)] left-[350px] sm:left-[calc(50%-32px)] transition-all duration-500 ease-in-out  flex flex-col gap-3 bg-[#bc511b] rounded-md px-7 pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] sm:-translate-x-[200px] -translate-x-[600px]' : ''}`}>
                 <div className="flex">
                     <img src="/img/microsoft-lg-light.svg" className="w-[200px] h-[60px]" alt="" />
                 </div>
@@ -54,7 +54,7 @@ export default function TrustSlider() {
                     </div>
                 </div>
             </div>
-            <div className={`absolute left-[calc(100%-64px)] transition-all duration-500 ease-in-out w-[calc(50%-64px)] flex flex-col gap-3 bg-[black] rounded-md px-7 pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] -translate-x-[200px]' : ''}`}>
+            <div className={`absolute sm:left-[calc(100%-64px)] left-[700px] transition-all duration-500 ease-in-out  w-[320px] sm:w-[calc(50%-64px)] flex flex-col gap-3 bg-[black] rounded-md px-7 pt-10 transform ${movePrev ? 'transform lg:-translate-x-[600px] md:-translate-x-[300px] sm:-translate-x-[200px] -translate-x-[600px]' : ''}`}>
                 <div className="flex">
                     <img src="/img/nasdaq-light.svg" className="w-[200px] h-[60px]" alt="" />
                 </div>
