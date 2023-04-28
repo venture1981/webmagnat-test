@@ -21,7 +21,7 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
     "Hire in the USA"
   ]
   return (
-    <div className="flex flex-col bg-[#001e00] p-5 mx-4 md:mx-10 rounded-md">
+    <div className="flex flex-col bg-[#001e00] p-5 mx-4 md:mx-10 mt-10 rounded-md">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
           <div className="flex flex-row justify-between my-5 transition-all duration-500 ease-in-out cursor-pointer md:flex md:flex-col md:border-none"
