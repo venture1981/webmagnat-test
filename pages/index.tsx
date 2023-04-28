@@ -41,7 +41,7 @@ export default function HomePage(props: {
   ];
   return (
     <>
-      <main className="container mx-auto w-full min-h-100vh flex flex-col">
+      <main className="container md:mx-auto mx-3 w-full min-h-100vh flex flex-col">
         <div className="flex justify-between">
           <div className="flex flex-col justify-start">
             <p className=" text-[#14a800] leading-[70px] text-[70px]" style={{ fontFamily: "PT Serif" }}>How work<br />should work</p>
@@ -200,40 +200,40 @@ export default function HomePage(props: {
             <p className="text-[42px] text-black leading-[42px]" style={{ fontFamily: "PT Serif" }}>turn to Upwork</p>
             <div className="flex mt-3">
               <div className="flex">
-                <div className="w-5 h-5">
+                <div className="w-5 h-5 mt-[10px]">
                   <Cost />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-[36px] text-black">Proof of quality</p>
+                  <p className="text-[26px] text-black">Proof of quality</p>
                   <p className="text-[16px] text-black"> Check any pros work samples, client reviews, and identity verification.</p>
                 </div>
               </div>
             </div>
             <div className="flex mt-3">
               <div className="flex">
-                <div className="w-5 h-5">
+                <div className="w-5 h-5 mt-[10px]">
                   <Cost />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-[36px] text-black">No cost until you hire</p>
+                  <p className="text-[26px] text-black">No cost until you hire</p>
                   <p className="text-[16px] text-black"> Check any pros work samples, client reviews, and identity verification.</p>
                 </div>
               </div>
             </div>
             <div className="flex mt-3">
               <div className="flex">
-                <div className="w-5 h-5">
+                <div className="w-5 h-5 mt-[10px]">
                   <Cost />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-[36px] text-black">Safe and secure</p>
+                  <p className="text-[26px] text-black">Safe and secure</p>
                   <p className="text-[16px] text-black"> Check any pros work samples, client reviews, and identity verification.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-row px-3 md:w-2/5 w-full mx-3 rounded-md  bg-[#108a00] relative">
-            <img className="w-[360px] h-[700px] lg:scale-[0.78]  -rotate-[8deg] lg:-top-[100px] lg:-left-[250px] scale-[0.6] -top-[210px] left-[210px] md:-left-[190px] md:-top-[110px] object-cover z-[1] absolute" src="/img/person.png" alt="" />
+          <div className="flex flex-row px-3 md:w-2/5 w-full mx-3 rounded-md ml-0 bg-[#108a00] relative">
+            <img className="w-[360px] h-[700px] lg:scale-[0.78]  -rotate-[8deg] lg:-top-[100px] lg:-left-[250px] left-[110px] scale-[0.2] se:scale-[0.3] -top-[160px] se:-top-[150px] md:scale-[0.6]  se:left-[115px] md:-left-[190px] md:-top-[110px] object-cover z-[1] absolute" src="/img/person.png" alt="" />
             <div className="flex flex-col md:pt-[160px] py-[44px] text-white">
               <p className="text-3xl font-bold">We're the world's work marketplace</p>
               <div className="flex items-center mt-5">
@@ -306,10 +306,10 @@ export default function HomePage(props: {
         </div>
         <div className="flex md:flex-row flex-col justify-around gap-4">
           <div className="flex flex-row md:flex-col gap-3">
-            <p className="text-[#14a800] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Top skills</p>
-            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Trending skills</p>
-            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Top skills in US</p>
-            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[32px] font-semibold">Project catalog</p>
+            <p className="text-[#14a800] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Top skills</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Trending skills</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Top skills in US</p>
+            <p className="text-[#d5e0d5] cursor-pointer hover:text-[#14a800] text-[18px] md:text-[32px] font-semibold">Project catalog</p>
           </div>
           <div className="flex flex-row justify-between mb-10">
             <div className="grid gap-3 sm:grid-cols-2">
