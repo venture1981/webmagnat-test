@@ -2,7 +2,7 @@ import { Star } from "./SvgList"
 
 export const Stack = (props: { title, point, skills }) => {
     return (
-        <div className="flex pl-3 flex-col bg-[#f0f5f0] cursor-pointer hover:bg-[#b6b8b6] w-[255px] h-[135px] items-center pt-8 gap-2">
+        <div className="flex pl-3 flex-col  cursor-pointer hover:bg-[#eef1ee] w-[255px] h-[135px] items-center pt-8 gap-2">
             <p className="text-[20px] font-medium">
                 {props.title}
             </p>
