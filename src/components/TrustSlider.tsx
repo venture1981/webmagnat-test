@@ -1,18 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import { ArrowRight } from "./SvgList";
 
 export default function TrustSlider() {
     const [movePrev, setMovePrev] = useState(false);
     return (
-        <div className="flex gap-8 relative h-[450px] overflow-hidden transition-all duration-500 ease-in-out">
+        <div className="flex gap-8 relative h-[650px] overflow-hidden transition-all duration-500 ease-in-out">
             {
                 movePrev ?
-                    <button className={`z-30 absolute left-0 top-[calc(50%-40px)] w-10 h-10 p-2 rotate-180 rounded-full bg-white shadow-md`}
+                    <button className={`z-30 absolute left-0 top-[calc(25%)] w-10 h-10 p-2 rotate-180 rounded-full bg-white shadow-md`}
                         onClick={() => {
                             setMovePrev(false)
                         }}
                     ><ArrowRight /></button> :
-                    <button className="z-30 absolute right-0 top-[calc(50%-40px)] w-10 h-10 p-2 rotate-0 rounded-full bg-white shadow-md"
+                    <button className="z-30 absolute right-0 top-[calc(25%)] w-10 h-10 p-2 rotate-0 rounded-full bg-white shadow-md"
                         onClick={() => {
                             setMovePrev(true)
                         }}

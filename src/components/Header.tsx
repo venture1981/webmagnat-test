@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable @next/next/no-img-element */
 import { Search, UpdownArrow } from "./SvgList";
 import { useState } from "react";
 import Head from 'next/head';
@@ -17,7 +19,7 @@ const Header = ({ }: IHeaderProps): JSX.Element => {
   return (
     <div className="fixed top-0 z-10 flex flex-col w-full bg-white">
       <Head>
-        <title>Upwork | The world's work Marketplace</title>
+        <title>Upwork | The worlds work Marketplace</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div className="w-full flex flex-row justify-between items-center h-[64px] p-[24px] border-b border-[#D5E0D5]">
@@ -95,10 +97,10 @@ const Header = ({ }: IHeaderProps): JSX.Element => {
       <div className="w-full hidden lg:flex flex-row justify-between items-center h-[64px] p-[24px]">
         <div className="flex items-center gap-4">
           {buttonList.map((index, key) => {
-
-            <div className="flex items-center group">
-              <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]" key={key}>{index}</button>
-            </div>
+            return (
+              <div className="flex items-center group">
+                <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]" key={key}>{index}</button>
+              </div>)
           })}
           <div className="flex items-center group">
             <button className="p-[10px] pr-0 text-[14px] font-medium text-[#001200] hover:text-[#14a800]">More</button>

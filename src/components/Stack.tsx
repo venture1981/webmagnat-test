@@ -1,6 +1,6 @@
 import { Star } from "./SvgList"
 
-export const Stack = (props: { title, point, skills }) => {
+export const Stack = (props: { title: string, point: string, skills: string }) => {
     return (
         <div className="flex pl-3 flex-col  cursor-pointer hover:bg-[#eef1ee] w-[255px] h-[135px] items-center pt-8 gap-2">
             <p className="text-[20px] font-medium">

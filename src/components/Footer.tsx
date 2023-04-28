@@ -1,4 +1,3 @@
-import { WalletModalButton } from "@solana/wallet-adapter-react-ui";
 import { Apple, Cost, Facebook, Instagram, Linkedin, Robot, Search, Twitter, UpdownArrow, UpdownArrowwhite, Youtube } from "./SvgList";
 import { useState } from "react";
 interface IHeaderProps { }
@@ -22,7 +21,7 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
     "Hire in the USA"
   ]
   return (
-    <div className="flex flex-col bg-[#001e00] p-5 container mx-auto rounded-md">
+    <div className="flex flex-col bg-[#001e00] p-5 mx-4 md:mx-10 rounded-md">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="md:flex flex-col flex md:justify-start justify-between  border-b-[1px] border-white md:border-none md:pb-5 pb-0">
           <div className="flex flex-row justify-between my-5 transition-all duration-500 ease-in-out cursor-pointer md:flex md:flex-col md:border-none"
@@ -45,9 +44,9 @@ const Footer = ({ }: IHeaderProps): JSX.Element => {
               height: isList ? "250px" : "0"
             }}
           >
-            {list.map((index) => {
+            {list.map((index, key) => {
               return (
-                <p className="text-[14px] text-white hover:underline cursor-pointer">{index}</p>
+                <p className="text-[14px] text-white hover:underline cursor-pointer" key={key}>{index}</p>
               )
             })}
 
